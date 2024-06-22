@@ -62,7 +62,7 @@ button:hover {
 }
 
 .color-acento {
-    color: var(--violet);
+    color: #8b30e3;
 }
 
 .container {
@@ -131,7 +131,7 @@ header a:hover {
 
 #somos-viya .container {
     text-align: center;
-    padding: var(--padding-container-w) var(--padding-container-h);
+    padding: calc(var(--padding-container-w)/2) var(--padding-container-h);
 }
 
 #places {
@@ -159,11 +159,16 @@ header a:hover {
     padding: 50px;
     margin: 20px;
     border-radius: 15px;
-    display: flex;
+    /*display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content: center;*/
+}
+
+
+#places .carta:hover {
+    border: 2px solid #8b30e3;
 }
 
 
@@ -186,9 +191,14 @@ header a:hover {
     padding: var(--padding-container-w) var(--padding-container-h);
 }
 
+
 #caracteristicas li {
     margin: 15px 0;
     font-weight: bold;
+}
+
+#caracteristicas li:hover{
+    font-weight:800;
 }
 
 #final {
@@ -226,5 +236,95 @@ footer p {
     margin: 0;
     padding: 12px;
     color: rgb(100, 100, 100);
+}
+
+@media (min-width:720px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #somos-viya .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    #somos-viya .img-container {
+        background-image: url("media/BlueLake.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 50vh;
+        width: 100%;
+
+    }
+
+    #somos-viya .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 50vh;
+    }
+
+
+    #places .places-to-visit {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #places p {
+        display: block;
+    }
+
+    #places .carta {
+        padding: 30px;
+        background-size: 100% 100px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgb(50, 50, 50,0.3);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #places .carta h3 {
+        margin-top: 0;
+        margin-bottom: 50px;
+
+    }
+
+    #places .carta button {
+        text-wrap: nowrap;
+    }
+
+    .carta:first-child {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/Beach-cropped.jpg");
+
+    }
+
+    .carta:nth-child(2) {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/Mountain-cropped.jpg");
+    }
+
+    .carta:nth-child(3) {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/City-cropped.jpg");
+
+    }
 
 }
