@@ -16,5 +16,5 @@
 ## Acknowledgement
 
 ### Project guided by the [Youtube](https://youtu.be/VgHproadDD8) tutorial of the [Freecodecamp](https://www.freecodecamp.org/) platform.
-### Ver perfil de:
+### See profile:
 [![Web](https://img.shields.io/badge/GitHub-DavidChoi-14a1f0?style=for-the-badge&logo=github&logoColor=white&labelColor=101010)](https://github.com/choidavid4)
